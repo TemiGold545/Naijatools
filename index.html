@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free everyday tools: calculator, text tools, converters, notes, age calculator and budget planner.">
+  <meta name="theme-color" content="#101827">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <title>NaijaMultiTools — Useful tools, all in one place</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">N</span> Naija<span>MultiTools</span></a>
+    <nav><a href="#tools">Tools</a><a href="#about">About</a></nav>
+    <button class="install-btn" id="installBtn" hidden>＋ Install app</button>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">◐</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow">⚡ SIMPLE. FREE. USEFUL.</div>
+      <h1>Small tasks.<br><span>Made easier.</span></h1>
+      <p>Everyday tools for school, work and life — all in one place. No account and no AI engine required.</p>
+      <a class="primary-btn" href="#tools">Explore free tools <span>→</span></a>
+      <div class="hero-note">✓ Free to use &nbsp; ✓ Works on mobile &nbsp; ✓ Your notes stay in your browser</div>
+    </section>
+
+    <section class="tools-section" id="tools">
+      <div class="section-heading">
+        <div><div class="eyebrow">YOUR TOOLBOX</div><h2>What do you need to do?</h2></div>
+        <input id="toolSearch" class="search" type="search" placeholder="Find a tool..." aria-label="Search tools">
+      </div>
+      <div class="tool-grid" id="toolGrid">
+        <button class="tool-card" data-tool="calculator"><span class="tool-icon purple">＋</span><b>Calculator</b><small>Quick everyday calculations</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="text"><span class="tool-icon blue">Aa</span><b>Text toolkit</b><small>Count words and change case</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="converter"><span class="tool-icon orange">⇄</span><b>Unit converter</b><small>Length, weight and temperature</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="password"><span class="tool-icon green">✳</span><b>Password maker</b><small>Generate a random password</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="notes"><span class="tool-icon yellow">▤</span><b>Quick notes</b><small>Save notes on this device</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="age"><span class="tool-icon pink">▦</span><b>Age calculator</b><small>Calculate age from birth date</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="budget"><span class="tool-icon teal">₦</span><b>Budget planner</b><small>Plan spending and savings</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="tip"><span class="tool-icon red">%</span><b>Tip calculator</b><small>Split a bill fairly</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="percentage"><span class="tool-icon purple">％</span><b>Percentage tool</b><small>Find percentages and changes</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="discount"><span class="tool-icon orange">🏷</span><b>Discount calculator</b><small>Work out sale prices</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="vat"><span class="tool-icon teal">₦</span><b>VAT calculator</b><small>Estimate VAT and totals</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="loan"><span class="tool-icon blue">↗</span><b>Loan estimator</b><small>Estimate simple interest</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="date"><span class="tool-icon pink">◷</span><b>Date difference</b><small>Count days between dates</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="picker"><span class="tool-icon yellow">✦</span><b>Random picker</b><small>Pick an item from a list</small><span class="card-arrow">↗</span></button>
+        <button class="tool-card" data-tool="gpa"><span class="tool-icon green">A+</span><b>Grade average</b><small>Calculate a simple grade average</small><span class="card-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="workspace" id="workspace" hidden>
+      <div class="workspace-head"><div><div class="eyebrow">TOOL WORKSPACE</div><h2 id="toolTitle">Calculator</h2></div><button id="closeTool" class="close-btn">✕ Close</button></div>
+      <div id="toolContent" class="tool-content"></div>
+    </section>
+
+    <section class="share-panel" id="about">
+      <div><div class="eyebrow">TAKE IT WITH YOU</div><h2>Install it on your phone.</h2><p>Add NaijaMultiTools to your home screen. It can open offline after your first visit.</p></div>
+      <div class="share-actions"><button class="primary-btn" id="shareBtn">Share website ↗</button><button class="secondary-install" id="installBtnBottom" hidden>Install app</button></div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">N</span> Naija<span>MultiTools</span></a><p>Free everyday tools. Built to make life a little easier.</p><small>© <span id="year"></span> NaijaMultiTools</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
